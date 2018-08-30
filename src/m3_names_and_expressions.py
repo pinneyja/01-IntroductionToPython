@@ -1,9 +1,10 @@
+import math
 
 answer = 2 ** 5
 print(answer * 100)
 
 ###############################################################################
-# TODO: 1.
+# DONE: 1.
 #   Read the 2 lines of code ABOVE this _TODO_.  That code:
 #     1. Computes 2 raised to the 5th power, yielding the object that is
 #          the integer 32.
@@ -20,7 +21,7 @@ print(answer * 100)
 ###############################################################################
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #   Immediately below this _TODO_, write code that:
 #     - Computes 77 plus the cosine of 2.75.
 #         HINT: You will need to import the   math  module (library).
@@ -29,17 +30,23 @@ print(answer * 100)
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
 
+answer = 77 + math.cos(2.75)
+print(math.sqrt(answer))
+print("radians: ", answer)
+print("degrees: ", math.degrees(answer))
+
 ###############################################################################
-# TODO: 3.
+# DONE: 3.
 #   Immediately below this _TODO_, write code that computes and prints:
 #      the square root of ((41 * 88) + (4 * the cosine of 2))
 #   Use as few or as many intermediate names as you feel appropriate.
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
 
+print(math.sqrt((41 * 88) + (4 * math.cos(2))))
 
 ###############################################################################
-# TODO: 4.
+# DONE: 4.
 #   Immediately below this _TODO_,
 #   write code that computes the square root of 2 in two ways:
 #     - By using the   math.sqrt   function.
@@ -48,9 +55,11 @@ print(answer * 100)
 #   Run your code (fix errors as needed), then change the above _TODO_ to DONE.
 ###############################################################################
 
+print(math.sqrt(2))
+print(2 ** .5)
 
 ###############################################################################
-# TODO: 5.
+# DONE: 5.
 #   Every object has a TYPE and a VALUE.  For example,
 #   for the object that is computed by  math.sqrt(2):
 #      Its TYPE is float  (which is shorthand for "floating point number")
@@ -73,19 +82,32 @@ print(answer * 100)
 #      -- Write code of the form   print(type(BLAH)).
 #      -- RUN the code to LEARN its TYPE.
 
-#       "hello"
-#       'hello'
-#       "a b c"
-#       3 + 3
-#       "3" + "3"
-#       2 ** 100
-#       2.0 ** 100
-#       math.sin(8)
-#       math.sin
-#       print
-#       math
-#       'math'
+#       "hello" - string
+#       'hello' - string
+#       "a b c" - string
+#       3 + 3 - integer
+#       "3" + "3" - string
+#       2 ** 100 - int
+#       2.0 ** 100 - floating point
+#       math.sin(8) - floating point
+#       math.sin - method
+#       print - method
+#       math - class
+#       'math' - string
 #
 # After you have written and run the code to learn the TYPE
 # of each of the above, change the above _TODO_ to DONE.
 ###############################################################################
+
+print("1", type("hello"))
+print("2", type('hello'))
+print("3", type("a b c"))
+print("4", type(3 + 3))
+print("5", type("3" + "3"))
+print("6", type(2 ** 100))
+print("7", type(2.0 ** 100))
+print("8", type(math.sin(8)))
+print("9", type(math.sin))
+print("10", type(print))
+print("11", type(math))
+print("12", type('math'))
