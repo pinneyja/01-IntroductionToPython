@@ -44,6 +44,7 @@ window = rg.TurtleWindow()
 
 turtle = rg.SimpleTurtle()
 turtle.pen = rg.Pen("blue", 5)
+
 turtle.left(90)
 turtle.forward(100)
 turtle.pen_up()
